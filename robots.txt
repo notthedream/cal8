@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://notthedream.github.io/cal8/sitemap.xml
