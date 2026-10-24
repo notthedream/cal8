@@ -84,3 +84,142 @@
 @media(prefers-color-scheme:dark){.plan-card-pro{background:linear-gradient(145deg,rgba(103,79,176,.3),rgba(54,43,74,.7) 52%,rgba(37,67,67,.46))}.plans-section{background:linear-gradient(180deg,rgba(49,40,72,.18),rgba(35,68,67,.19))}.privacy-panel{background:linear-gradient(135deg,rgba(31,28,42,.85),rgba(60,48,90,.62) 56%,rgba(35,72,71,.48))}.plan-link{background:var(--surface-solid)}}
 @media(max-width:720px){.conversion-page .language-select-control{width:32px;height:32px}.conversion-page .language-select-control svg{width:15px;height:15px}.conversion-page .language-switcher a{min-width:31px;padding:6px 8px}.plan-grid{gap:11px;margin-top:29px}.plan-card{padding:20px;border-radius:20px}.plan-card ul{gap:11px;margin:20px 0 22px}.plan-card li{font-size:11px}.privacy-section{padding-top:12px;padding-bottom:78px}.privacy-panel{grid-template-columns:1fr;gap:23px;padding:24px;border-radius:23px}.privacy-copy h2{font-size:clamp(1.8rem,8vw,2.7rem)}.privacy-copy>p:not(.kicker){font-size:12px}.privacy-points{gap:8px}.privacy-points li{padding:13px}}
 @media(max-width:480px){.conversion-page .language-switcher{display:flex;gap:3px;flex:none}.conversion-page .language-switcher a{min-width:29px;padding:6px 7px;font-size:9px}.conversion-page .language-select-control{display:grid;flex:none;width:30px;height:30px}.conversion-page .header-right{gap:6px}.conversion-page .header-cta{padding:8px 9px;font-size:9px}.plan-grid{grid-template-columns:1fr}.plan-card{padding:21px}.plan-card h3{font-size:29px}.plan-card li{font-size:12px}.conversion-page .app-store-badge{min-height:54px;padding:8px 13px}.conversion-page .app-store-badge .badge-copy strong{font-size:15px}.conversion-page .legal-links{gap:10px}.conversion-page .legal-links a{font-size:9px}}
+
+/* Keep every localized landing page readable on narrow screens. */
+@media (max-width: 720px) {
+  h1,
+  .section-heading h2,
+  .screens-heading h2,
+  .privacy-copy h2,
+  .final-content h2 {
+    overflow-wrap: anywhere;
+  }
+
+  h1 {
+    font-size: clamp(2.25rem, 10vw, 4rem);
+  }
+
+  .section-heading h2,
+  .screens-heading h2,
+  .privacy-copy h2 {
+    font-size: clamp(1.75rem, 7vw, 2.85rem);
+  }
+
+  .final-content h2 {
+    font-size: clamp(2rem, 8vw, 3.5rem);
+  }
+
+  h3,
+  p,
+  a,
+  li,
+  summary,
+  small,
+  strong {
+    overflow-wrap: anywhere;
+  }
+
+  .site-header,
+  main,
+  .hero,
+  .section,
+  .final-cta,
+  .site-footer,
+  .hero-inner,
+  .hero-copy,
+  .feature-grid,
+  .feature-card,
+  .how-layout,
+  .steps-list,
+  .step-card,
+  .screens-heading,
+  .screens-track,
+  .shot-card,
+  .shot-figure,
+  .shot-figure figcaption,
+  .plan-grid,
+  .plan-card,
+  .privacy-panel,
+  .privacy-copy,
+  .privacy-points,
+  .privacy-points li,
+  .privacy-points li > div,
+  .faq-layout,
+  .faq-list,
+  .faq-list details,
+  .faq-list summary,
+  .footer-main,
+  .footer-bottom {
+    min-width: 0;
+  }
+
+  .hero-inner > *,
+  .feature-grid > *,
+  .how-layout > *,
+  .steps-list > *,
+  .step-card > *,
+  .screens-heading > *,
+  .screens-track > *,
+  .plan-grid > *,
+  .privacy-panel > *,
+  .privacy-points > *,
+  .privacy-points li > *,
+  .faq-layout > *,
+  .footer-main > * {
+    min-width: 0;
+  }
+
+  .hero-inner,
+  .feature-grid,
+  .how-layout,
+  .faq-layout,
+  .plan-grid,
+  .privacy-panel {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .step-card {
+    grid-template-columns: 45px minmax(0, 1fr) 18px;
+  }
+
+  .screens-heading {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    align-items: start;
+    gap: 14px;
+  }
+
+  .screens-heading .section-heading {
+    max-width: none;
+  }
+
+  .carousel-controls {
+    justify-content: flex-start;
+  }
+
+  .screens-track {
+    grid-auto-columns: calc(100vw - 42px);
+    grid-auto-flow: column;
+  }
+
+  .shot-card {
+    width: 100%;
+  }
+
+  .footer-main {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .footer-brand,
+  .footer-main p,
+  .legal-links {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .footer-bottom {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
