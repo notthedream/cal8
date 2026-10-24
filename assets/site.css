@@ -40,3 +40,47 @@
   .screen-frame-front{width:146px}
   .screen-frame-back{width:127px}
 }
+
+/* Product details added for the root-domain EN and Japanese landing pages. */
+.conversion-page .language-switcher{display:flex;align-items:center;gap:4px}
+.conversion-page .language-switcher a{min-width:34px;padding:7px 9px;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-size:10px;font-weight:800;text-align:center;transition:background .18s,color .18s,border-color .18s}
+.conversion-page .language-switcher a:hover{border-color:rgba(113,84,237,.35);color:var(--ink)}
+.conversion-page .language-switcher a[aria-current="page"]{border-color:var(--ink);background:var(--ink);color:var(--bg)}
+.conversion-page .language-select-control{position:relative;display:grid;place-items:center;flex:none;width:35px;height:35px;border:1px solid var(--line);border-radius:50%;background:var(--surface-solid);color:var(--ink)}
+.conversion-page .language-select-control svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.conversion-page .language-select-control:focus-within{outline:3px solid var(--blue);outline-offset:3px}
+.conversion-page .language-select{position:absolute;inset:0;width:100%;height:100%;margin:0;border:0;opacity:0;cursor:pointer;appearance:none}
+.conversion-page .app-store-badge{min-height:58px;padding:8px 17px;border:1px solid rgba(255,255,255,.12);border-radius:13px;background:#09090d;color:#fff;box-shadow:0 12px 28px rgba(19,15,31,.2);transition:transform .2s,background .2s,box-shadow .2s}
+.conversion-page .app-store-badge:hover{transform:translateY(-2px);background:#1c1b22;box-shadow:0 18px 35px rgba(19,15,31,.26)}
+.conversion-page .app-store-badge>svg{width:25px;height:25px;fill:none;stroke:currentColor;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}
+.conversion-page .app-store-badge .badge-copy{display:flex;flex-direction:column;align-items:flex-start;gap:1px;line-height:1.05}
+.conversion-page .app-store-badge .badge-copy small{font-size:9px;font-weight:500;letter-spacing:.01em}
+.conversion-page .app-store-badge .badge-copy strong{font-size:16px;font-weight:720;letter-spacing:-.035em}
+.plans-section{position:relative;padding-top:102px;padding-bottom:112px;background:linear-gradient(180deg,rgba(239,236,250,.24),rgba(226,243,241,.36))}
+.plan-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch;gap:17px;margin-top:42px}
+.plan-card{display:flex;flex-direction:column;min-width:0;padding:clamp(23px,3vw,34px);border:1px solid var(--line);border-radius:25px;background:var(--surface);box-shadow:0 10px 36px rgba(45,34,72,.055)}
+.plan-card-pro{border-color:rgba(113,84,237,.34);background:linear-gradient(150deg,rgba(113,84,237,.11),rgba(232,222,255,.48) 50%,rgba(238,223,235,.42));box-shadow:0 18px 48px rgba(79,59,140,.13)}
+.plan-label{margin:0 0 9px;color:var(--violet);font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+.plan-card h3{margin:0;font-size:clamp(26px,3vw,35px);font-weight:800;letter-spacing:-.055em}
+.plan-card ul{display:grid;gap:13px;margin:24px 0 27px;padding:0;list-style:none}
+.plan-card li{position:relative;padding-left:26px;color:var(--muted);font-size:13px;line-height:1.65}
+.plan-card li:before{content:"✓";position:absolute;top:0;left:0;display:grid;place-items:center;width:18px;height:18px;border-radius:50%;background:rgba(113,84,237,.12);color:var(--violet);font-size:11px;font-weight:900}
+.plan-note{margin:-5px 0 18px;color:var(--muted);font-size:11px;line-height:1.6}
+.plan-link{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:auto;padding:13px 15px;border:1px solid var(--line);border-radius:14px;background:var(--surface-solid);color:var(--ink);font-size:12px;font-weight:800;transition:transform .18s,border-color .18s}
+.plan-link:hover{transform:translateY(-2px);border-color:rgba(113,84,237,.38)}
+.plan-link span{color:var(--violet);font-size:16px}
+.privacy-section{padding-top:30px;padding-bottom:110px}
+.privacy-panel{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,.82fr);align-items:center;gap:clamp(30px,7vw,90px);padding:clamp(26px,5vw,58px);border:1px solid rgba(113,84,237,.16);border-radius:30px;background:linear-gradient(135deg,var(--surface),rgba(234,230,249,.63) 56%,rgba(220,242,237,.55));box-shadow:var(--shadow)}
+.privacy-copy h2{max-width:610px;margin:0 0 15px;font-size:clamp(1.9rem,4vw,3rem);line-height:1.08;letter-spacing:-.065em}
+.privacy-copy>p:not(.kicker){max-width:64ch;margin:0;color:var(--muted);font-size:13px;line-height:1.8}
+.privacy-link{display:inline-flex;align-items:center;gap:9px;margin-top:20px;color:var(--violet);font-size:12px;font-weight:800}
+.privacy-link span{font-size:16px}
+.privacy-points{display:grid;gap:10px;margin:0;padding:0;list-style:none}
+.privacy-points li{display:grid;grid-template-columns:32px minmax(0,1fr);align-items:start;gap:12px;padding:16px;border:1px solid var(--line);border-radius:17px;background:var(--surface)}
+.privacy-points li>span{display:grid;place-items:center;width:29px;height:29px;border-radius:10px;background:rgba(113,84,237,.12);color:var(--violet);font-size:13px;font-weight:900}
+.privacy-points strong,.privacy-points small{display:block}
+.privacy-points strong{margin:1px 0 4px;font-size:12px;font-weight:800}
+.privacy-points small{color:var(--muted);font-size:10px;line-height:1.6}
+@media(prefers-color-scheme:dark){.plan-card-pro{background:linear-gradient(145deg,rgba(103,79,176,.3),rgba(54,43,74,.7) 52%,rgba(37,67,67,.46))}.plans-section{background:linear-gradient(180deg,rgba(49,40,72,.18),rgba(35,68,67,.19))}.privacy-panel{background:linear-gradient(135deg,rgba(31,28,42,.85),rgba(60,48,90,.62) 56%,rgba(35,72,71,.48))}.plan-link{background:var(--surface-solid)}}
+@media(max-width:720px){.conversion-page .language-select-control{width:32px;height:32px}.conversion-page .language-select-control svg{width:15px;height:15px}.conversion-page .language-switcher a{min-width:31px;padding:6px 8px}.plan-grid{gap:11px;margin-top:29px}.plan-card{padding:20px;border-radius:20px}.plan-card ul{gap:11px;margin:20px 0 22px}.plan-card li{font-size:11px}.privacy-section{padding-top:12px;padding-bottom:78px}.privacy-panel{grid-template-columns:1fr;gap:23px;padding:24px;border-radius:23px}.privacy-copy h2{font-size:clamp(1.8rem,8vw,2.7rem)}.privacy-copy>p:not(.kicker){font-size:12px}.privacy-points{gap:8px}.privacy-points li{padding:13px}}
+@media(max-width:480px){.conversion-page .language-switcher{display:flex;gap:3px;flex:none}.conversion-page .language-switcher a{min-width:29px;padding:6px 7px;font-size:9px}.conversion-page .language-select-control{display:grid;flex:none;width:30px;height:30px}.conversion-page .header-right{gap:6px}.conversion-page .header-cta{padding:8px 9px;font-size:9px}.plan-grid{grid-template-columns:1fr}.plan-card{padding:21px}.plan-card h3{font-size:29px}.plan-card li{font-size:12px}.conversion-page .app-store-badge{min-height:54px;padding:8px 13px}.conversion-page .app-store-badge .badge-copy strong{font-size:15px}.conversion-page .legal-links{gap:10px}.conversion-page .legal-links a{font-size:9px}}
